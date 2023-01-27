@@ -1,7 +1,8 @@
 //rutas
+const {Router} = require('express');
+const { consultarComercios } = require('../controller/consultaComercios');
+const router = Router();
 
-app.get('/comercios', (req, res) => {
-    res.json({
-        "response": 123
-    });
-});
+router.get('/',consultarComercios);
+
+module.exports = router;
