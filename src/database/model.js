@@ -1,46 +1,19 @@
-const {Schema, model} = require('moongose');
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
 
 const comercios = new Schema({
-    nombreNeogcio: {
-        type: String,
-        required: true
-    },
-    idUsuario : {
-        type: String,
-        required: true
-    },
-    categoriaNegocio: {
-        type: String,
-        required: true
-    },
-    direccionNegocio: {
-        type: String,
-        required: true
-    },
-    numeroTelefonicoNegocio: {
-        type: String,
-        required: true
-    },
-    descripcionNegocio: {
-        type: String,
-        required: true
-    },
-    imagenesComercio: {
-        type: Array,
-        of: String,
-        required: true
-    },
-    diasApertura: {
-        type: Array,
-        of:String,
-        required: true
-    },
-    horarioApertura: {
-        type: Object,
-        of: String,
-        required:true
-    }
+    nombreNeocio: String,
+    idUsuario: String,
+    categoriaNegocio: String,
+    direccionNegocio: String,
+    numeroTelefonicoNegocio: String,
+    descripcionNegocio: String,
+    imagenesComercio: Array,
+    diasApertura: Array,
+    horarioApertura: Object
+
 },
 );
 
-module.exports = model('comercios', comercios);
+module.exports = mongoose.model('comerciantes', comercios);

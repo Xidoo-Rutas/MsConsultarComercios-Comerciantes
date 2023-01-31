@@ -4,7 +4,8 @@ const { app, express, port } = require("./app");
 const dataBaseConect = require("./database/conexion");
 
 app.use(morgan('dev'));
-app.use(cors());
+app.use(cors('*'));
+app.use('/', require('../src/routes/consultaRoutes'));
 
 app.listen(port, ()=>{
     try {
