@@ -1,10 +1,12 @@
 //rutas
 const {Router} = require('express');
-const { consultarComercios, consultarComerciosById } = require('../controller/consultaComercios');
+const { consultarComercios, consultarComerciosById, consultarComerciosByClientId } = require('../controller/consultaComercios');
 const router = Router();
 
 router.get('/', consultarComercios);
 
-router.get('/usuario/:', consultarComerciosById);
+router.get('/comercio/:id', consultarComerciosById);
+
+router.get('/comercio/cliente/:idcliente', consultarComerciosByClientId)
 
 module.exports = router;

@@ -16,4 +16,4 @@ const comercios = new Schema({
 },
 );
 
-module.exports = mongoose.model('comerciantes', comercios);
+module.exports = mongoose.model('comercios', comercios);
