@@ -1,0 +1,14 @@
+{
+    "nombreNegocio": "String",
+    "idUsuario": "String",
+    "categoriaNegocio": "String",
+    "direccionNegocio": "String",
+    "numeroTelefonicoNegocio": "String",
+    "descripcionNegocio": "String",
+    "imagenesComercio": ["image.png", "imgae2.png", "image.png"],
+    "diasApertura": ["Lunes", "Martes", "Miercoles"],
+    "horarioApertura": {
+        "apertura" : "2",
+        "cierre" : "10"
+    }
+}

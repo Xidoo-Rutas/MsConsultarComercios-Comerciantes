@@ -23,7 +23,7 @@ const consultarComerciosById = (req,res) => {
 
 const consultarComerciosByClientId = (req, res) => {
     comercios.find({idUsuario: req.params.idcliente}, (err, docs)=>{
-        if (err) return res.send(err);
+        if (err) return res.json({err});
         if (docs) return res.send(docs);
     })
 };

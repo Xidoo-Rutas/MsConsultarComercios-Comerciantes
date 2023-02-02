@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 
 const comercios = new Schema({
-    nombreNeocio: String,
+    nombreNegocio: String,
     idUsuario: String,
     categoriaNegocio: String,
     direccionNegocio: String,
@@ -12,7 +12,6 @@ const comercios = new Schema({
     imagenesComercio: Array,
     diasApertura: Array,
     horarioApertura: Object
-
 },
 );
 
